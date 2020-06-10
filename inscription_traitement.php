@@ -34,6 +34,7 @@
                                 'ip' => $ip
                             ));
                             header('Location:inscription.php?reg_err=success');
+                            die(); // On ferme la connexion 
                             
                         }else header('Location: inscription.php?reg_err=password');
                     }else header('Location: inscription.php?reg_err=email');
