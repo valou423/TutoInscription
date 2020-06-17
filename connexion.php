@@ -21,6 +21,7 @@
                 {
                     $_SESSION['user'] = $data['pseudo'];
                     header('Location:landing.php');
+                    die();
                 }else header('Location:index.php?login_err=password');
             }else header('Location:index.php?login_err=email');
         }else header('Location:index.php?login_err=already');
